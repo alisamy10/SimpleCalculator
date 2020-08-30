@@ -49,7 +49,6 @@ class MainActivity : AppCompatActivity(), ICalcView {
                 for (listener in iCompleteListeners) {
                     listener.add()
                 }
-
             }
             text.contains("-") -> {
                 for (listener in iCompleteListeners) {
@@ -98,6 +97,8 @@ class MainActivity : AppCompatActivity(), ICalcView {
         return number.getNumbers()[1].trim().toDouble()
     }
 
+
+    // subscribe to every equal to know the operation and update the result
     override fun subScribe(iCompleteListener: ICompleteListener) {
         iCompleteListeners.add(iCompleteListener)
     }
