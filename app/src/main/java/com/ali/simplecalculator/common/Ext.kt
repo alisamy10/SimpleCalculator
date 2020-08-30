@@ -1,6 +1,6 @@
 package com.ali.simplecalculator.common
 
-fun String.getNumber(): Array<String> {
+fun String.getNumbers(): Array<String> {
     var opr = arrayOf<String>()
 
     when {
