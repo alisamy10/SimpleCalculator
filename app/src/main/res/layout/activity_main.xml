@@ -49,6 +49,7 @@
             <Button
                 android:id="@+id/sevenBtn"
                 style="@style/BtnStyle"
+                android:onClick="onBtnClicked"
                 android:text="@string/seven" />
 
             <Button
