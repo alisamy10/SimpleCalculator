@@ -28,7 +28,10 @@ class CalcPresenter(private val iCalcView: ICalcView,private val iCalcModel: ICa
     }
 
     override fun divide() {
-        iCalcView.update(iCalcModel.divided(iCalcView.getNumber1(),iCalcView.getNumber2()))
-
+            try {
+                iCalcView.update(iCalcModel.divided(iCalcView.getNumber1(), iCalcView.getNumber2()))
+            }catch (e:Exception){
+                 e.printStackTrace()
+            }
     }
 }
